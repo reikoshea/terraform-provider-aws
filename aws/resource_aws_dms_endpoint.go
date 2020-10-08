@@ -108,6 +108,7 @@ func resourceAwsDmsEndpoint() *schema.Resource {
 				Required: true,
 				ValidateFunc: validation.StringInSlice([]string{
 					"aurora",
+					"aurora-serverless",
 					"aurora-postgresql",
 					"azuredb",
 					"db2",
